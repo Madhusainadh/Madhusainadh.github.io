@@ -6,6 +6,7 @@ import { useCallback } from "react";
 import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Home from './Components/Home';
+import Email from './Components/Email';
 function App() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -34,7 +35,7 @@ const particlesLoaded = useCallback(async (container) => {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
+                            enable: false,
                             mode: "push",
                         },
                         onHover: {
@@ -45,10 +46,10 @@ const particlesLoaded = useCallback(async (container) => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 1,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },
@@ -65,7 +66,7 @@ const particlesLoaded = useCallback(async (container) => {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -79,8 +80,8 @@ const particlesLoaded = useCallback(async (container) => {
                     },
                     number: {
                         density: {
-                            enable: true,
-                            area: 800,
+                            enable: false,
+                            area: 0,
                         },
                         value: 80,
                     },
@@ -100,7 +101,7 @@ const particlesLoaded = useCallback(async (container) => {
         
       
 <Home/>
-    
+
         
     </div>
   );

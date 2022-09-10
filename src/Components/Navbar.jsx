@@ -13,6 +13,7 @@ import {
   IconButton,
   CloseButton,
 } from "@chakra-ui/react";
+import madhu from "../madhu.pdf"
 import { AiOutlineMenu } from "react-icons/ai";
 import { Logo } from "@choc-ui/logo";
 
@@ -51,37 +52,39 @@ export default function Navbar() {
             <HStack
               spacing={1}
               mr={1}
-              color="blue"
+              color="#87CEEB "
               display={{
                 base: "none",
                 md: "inline-flex",
               }}
             >
-              <Button  variant='ghost' >Skills</Button>
-              <Button variant="ghost" >Projects</Button>
-              <Button variant="ghost" >Contact me</Button>
-              <Button variant="ghost" >About</Button>
+              <Button colorScheme="brand" variant='ghost' >Skills</Button>
+              <Button colorScheme="brand" variant="ghost" >Projects</Button>
+              <Button colorScheme="brand" variant="ghost" >Contact me</Button>
+              <Button colorScheme="brand" variant="ghost" >About</Button>
               
             </HStack>
             <Button colorScheme="brand" size="sm">
-              Download Resume
+             <a href={madhu} download='Madhusainadh'> Download Resume</a>
             </Button>
             <Box
               display={{
                 base: "inline-flex",
                 md: "none",
               }}
+              
             >
               <IconButton
+              colorScheme="brand" 
                 display={{
                   base: "flex",
                   md: "none",
                 }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color="gray.800"
+                color="white"
                 _dark={{
-                  color: "inherit",
+                  color: "white",
                 }}
                 variant="ghost"
                 icon={<AiOutlineMenu />}

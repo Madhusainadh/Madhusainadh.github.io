@@ -1,3 +1,6 @@
 .hov:hover {
     background-color: yellow;
   }
+.hover:hover {
+  color:#87CEEB;
+}
