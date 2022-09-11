@@ -17,15 +17,17 @@ import "./Navbar.css"
 
 export default function Skills() {
   return (
-    <Box p={'40px'} bg={'black'} display="flex" justifyContent={'center'}>
+    <Box  p={'100px'} bg={'black'} display="flex" justifyContent={'center'}>
   
     <Box w={'1000px'}>
     <Heading
-    color={'white'}
+
               style={{ fontFamily: "sans-serif" }}
               as="h2"
               size={[ "xl", "2xl", "3xl"]}
               p={'30px'}
+              className="glow"
+              contentEditable="true"
             >
            My Skills
             </Heading>

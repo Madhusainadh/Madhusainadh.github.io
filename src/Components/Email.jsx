@@ -53,7 +53,7 @@ export default function Email() {
   return (
     <Box style={{ fontFamily: "sans-serif" }} color={"white"} bg={"black"}>
       <Flex pt={"50px"}>
-        <Container  w={"50%"}>
+        <Container  >
           <form ref={form} onSubmit={sendEmail}>
             <FormControl>
               <FormLabel fontSize={"20px"}>Enter your name</FormLabel>
@@ -85,7 +85,7 @@ export default function Email() {
             </FormControl>
           </form>
         </Container>
-        <Container >
+        <Container  >
           <VStack gap={35}>
             <Heading
               style={{ fontFamily: "sans-serif" }}
@@ -100,8 +100,8 @@ export default function Email() {
                 <spam>
                   <HiMail size={30} />
                 </spam>
-                <Text fontSize={["lg", "xl", "2xl"]}>
-                  lalammadhusainadh150@gmailcom
+                <Text  fontSize={['md',"lg", "xl", "2xl"]}>
+                  lalammadhusainadh150@gmail.com
                 </Text>
               </HStack>
             </Box>
@@ -110,7 +110,7 @@ export default function Email() {
                 <spam>
                   <CgPhone size={30} />
                 </spam>
-                <Text fontSize={["lg", "xl", "2xl"]}>
+                <Text fontSize={['md',"lg", "xl", "2xl"]}>
                   +91 6303469572
                 </Text>
               </HStack>
@@ -120,7 +120,7 @@ export default function Email() {
                 <spam>
                   <AiOutlineLinkedin size={30} />
                 </spam>
-                <Text fontSize={["lg", "xl", "2xl"]}>
+                <Text fontSize={['md',"lg", "xl", "2xl"]}>
                <a href="https://www.linkedin.com/in/madhusainadh-lalam-aba64b204/">https://www.linkedin.com/in/madhusainadh</a> 
                 </Text>
               </HStack>

@@ -21,7 +21,7 @@ export default function Navbar() {
   const bg = useColorModeValue("Black", "gray.800");
   const mobileNav = useDisclosure();
   return (
-    <div >
+    <Box className="navtop" >
       <chakra.header
      
         bg={bg}
@@ -131,6 +131,6 @@ export default function Navbar() {
           </HStack>
         </Flex>
       </chakra.header>
-    </div>
+    </Box>
   );
 }
