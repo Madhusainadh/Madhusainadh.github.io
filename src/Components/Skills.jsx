@@ -1,5 +1,5 @@
 import { Box, Container, Heading, SimpleGrid, Text, VStack } from '@chakra-ui/react'
-import React from 'react'
+import React, { useContext } from 'react'
 import { SiChakraui } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
@@ -14,12 +14,15 @@ import { FaAws } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import "./Navbar.css"
+import { ContextScroll } from './Contextscrol';
 
 export default function Skills() {
+  // const {toSkills,SkillSection} = useContext(ContextScroll)
   return (
+    <selection id="skills">
     <Box  p={'100px'} bg={'black'} display="flex" justifyContent={'center'}>
   
-    <Box w={'1000px'}>
+    <Box w={'1000px'}  id="skills" >
     <Heading
 
               style={{ fontFamily: "sans-serif" }}
@@ -113,5 +116,6 @@ export default function Skills() {
   </SimpleGrid>
   </Box>
     </Box>
+    </selection>
   )
 }

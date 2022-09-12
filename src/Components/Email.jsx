@@ -51,7 +51,7 @@ export default function Email() {
   };
 
   return (
-    <Box style={{ fontFamily: "sans-serif" }} color={"white"} bg={"black"}>
+    <Box id="Contact me" style={{ fontFamily: "sans-serif" }} color={"white"} bg={"black"}>
       <Flex pt={"50px"}>
         <Container  >
           <form ref={form} onSubmit={sendEmail}>

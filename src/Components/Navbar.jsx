@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navbar.css"
 import {
   chakra,
@@ -12,14 +12,25 @@ import {
   VStack,
   IconButton,
   CloseButton,
+  Text,
+  Heading,
 } from "@chakra-ui/react";
 import madhu from "../madhu.pdf"
 import { AiOutlineMenu } from "react-icons/ai";
 import { Logo } from "@choc-ui/logo";
-
+import { ContextScroll } from "./Contextscrol";
+import {Link} from "react-scroll"
 export default function Navbar() {
+
+  // const {toSkills} = useContext(ContextScroll)
+
+
+
+
+
   const bg = useColorModeValue("Black", "gray.800");
   const mobileNav = useDisclosure();
+  let mdhu = "< Madhusainadh />"
   return (
     <Box className="navtop" >
       <chakra.header
@@ -44,8 +55,12 @@ export default function Navbar() {
               <Logo />
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2" color="white">
-            Madhusainadh
+            <chakra.h1 style={{"cursor":"pointer"}} fontSize="xl" fontWeight="medium" ml="2" color="white">
+            <Heading fontSize={"xl"}>
+            <Link to="me"  spy={true} smooth={true} duration={1000} >  {mdhu}</Link> 
+
+            </Heading>
+
             </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
@@ -58,10 +73,18 @@ export default function Navbar() {
                 md: "inline-flex",
               }}
             >
-              <Button colorScheme="brand" variant='ghost' >Skills</Button>
-              <Button colorScheme="brand" variant="ghost" >Projects</Button>
-              <Button colorScheme="brand" variant="ghost" >Contact me</Button>
-              <Button colorScheme="brand" variant="ghost" >About</Button>
+              <Button colorScheme="brand" variant='ghost' >
+              <Link to="skills"  spy={true} smooth={true} duration={1000} >  Skills</Link> 
+              </Button>
+              <Button colorScheme="brand" variant="ghost" >
+              <Link to="Projects"  spy={true} smooth={true} duration={1000} >  Projects</Link> 
+              </Button>
+              <Button colorScheme="brand" variant="ghost" >
+              <Link to="Contact me"  spy={true} smooth={true} duration={1000} >  Contact me</Link> 
+              </Button>
+              <Button colorScheme="brand" variant="ghost" >
+              <Link to="About"  spy={true} smooth={true} duration={1000} >  About</Link> 
+              </Button>
               
             </HStack>
             <Button colorScheme="brand" size="sm">
@@ -113,8 +136,8 @@ export default function Navbar() {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="full" colorScheme="brand" variant="ghost">
-                  Skills
+                <Button  w="full" colorScheme="brand" variant="ghost">
+               <Link to="skills"  spy={true} smooth={true} duration={1000} >  Skills</Link> 
                 </Button>
                 <Button w="full" colorScheme="brand" variant="ghost">
                   Projects
