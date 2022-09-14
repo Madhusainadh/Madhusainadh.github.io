@@ -20,7 +20,7 @@ export default function Skills() {
   // const {toSkills,SkillSection} = useContext(ContextScroll)
   return (
     <selection id="skills">
-    <Box  p={'100px'} bg={'black'} display="flex" justifyContent={'center'}>
+    <Box  p={'100px'} bg={'black'} display="flex" justifyContent={'center'} >
   
     <Box w={'1000px'}  id="skills" >
     <Heading

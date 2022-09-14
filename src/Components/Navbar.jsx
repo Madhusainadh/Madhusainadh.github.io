@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./Navbar.css"
+import "./Navbar.css";
 import {
   chakra,
   Box,
@@ -15,26 +15,20 @@ import {
   Text,
   Heading,
 } from "@chakra-ui/react";
-import madhu from "../madhu.pdf"
+import madhu from "../madhu.pdf";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Logo } from "@choc-ui/logo";
 import { ContextScroll } from "./Contextscrol";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 export default function Navbar() {
-
   // const {toSkills} = useContext(ContextScroll)
-
-
-
-
 
   const bg = useColorModeValue("Black", "gray.800");
   const mobileNav = useDisclosure();
-  let mdhu = "< Madhusainadh />"
+  let mdhu = "< Madhusainadh />";
   return (
-    <Box className="navtop" >
+    <Box className="navtop">
       <chakra.header
-     
         bg={bg}
         w="full"
         px={{
@@ -55,12 +49,19 @@ export default function Navbar() {
               <Logo />
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 style={{"cursor":"pointer"}} fontSize="xl" fontWeight="medium" ml="2" color="white">
-            <Heading fontSize={"xl"}>
-            <Link to="me"  spy={true} smooth={true} duration={1000} >  {mdhu}</Link> 
-
-            </Heading>
-
+            <chakra.h1
+              style={{ cursor: "pointer" }}
+              fontSize="xl"
+              fontWeight="medium"
+              ml="2"
+              color="white"
+            >
+              <Heading fontSize={"xl"}>
+                <Link to="me" spy={true} smooth={true} duration={1000}>
+                  {" "}
+                  {mdhu}
+                </Link>
+              </Heading>
             </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
@@ -73,32 +74,45 @@ export default function Navbar() {
                 md: "inline-flex",
               }}
             >
-              <Button colorScheme="brand" variant='ghost' >
-              <Link to="skills"  spy={true} smooth={true} duration={1000} >  Skills</Link> 
+              <Button colorScheme="brand" variant="ghost">
+                <Link to="skills" spy={true} smooth={true} duration={1000}>
+                  {" "}
+                  Skills
+                </Link>
               </Button>
-              <Button colorScheme="brand" variant="ghost" >
-              <Link to="Projects"  spy={true} smooth={true} duration={1000} >  Projects</Link> 
+              <Button colorScheme="brand" variant="ghost">
+                <Link to="Projects" spy={true} smooth={true} duration={1000}>
+                  {" "}
+                  Projects
+                </Link>
               </Button>
-              <Button colorScheme="brand" variant="ghost" >
-              <Link to="Contact me"  spy={true} smooth={true} duration={1000} >  Contact me</Link> 
+              <Button colorScheme="brand" variant="ghost">
+                <Link to="Contact me" spy={true} smooth={true} duration={1000}>
+                  {" "}
+                  Contact me
+                </Link>
               </Button>
-              <Button colorScheme="brand" variant="ghost" >
-              <Link to="About"  spy={true} smooth={true} duration={1000} >  About</Link> 
+              <Button colorScheme="brand" variant="ghost">
+                <Link to="About" spy={true} smooth={true} duration={1000}>
+                  {" "}
+                  About
+                </Link>
               </Button>
-              
             </HStack>
             <Button colorScheme="brand" size="sm">
-             <a href={madhu} download='Madhusainadh'> Download Resume</a>
+              <a href={madhu} download="Madhusainadh">
+                {" "}
+                Download Resume
+              </a>
             </Button>
             <Box
               display={{
                 base: "inline-flex",
                 md: "none",
               }}
-              
             >
               <IconButton
-              colorScheme="brand" 
+                colorScheme="brand"
                 display={{
                   base: "flex",
                   md: "none",
@@ -136,19 +150,30 @@ export default function Navbar() {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button  w="full" colorScheme="brand" variant="ghost">
-               <Link to="skills"  spy={true} smooth={true} duration={1000} >  Skills</Link> 
+                <Button w="full" colorScheme="brand" variant="ghost">
+                  <Link to="skills" spy={true} smooth={true} duration={1000}>
+                    {" "}
+                    Skills
+                  </Link>
                 </Button>
                 <Button w="full" colorScheme="brand" variant="ghost">
+                <Link to="Projects" spy={true} smooth={true} duration={1000}>
+
                   Projects
-                </Button>
-                <Button w="full"  colorScheme="brand" variant="ghost">
-                  About
+                  </Link>
                 </Button>
                 <Button w="full" colorScheme="brand" variant="ghost">
-                  Contact me
+                <Link to="About" spy={true} smooth={true} duration={1000}>
+
+                  About
+                  </Link>
                 </Button>
-               
+                <Button w="full" colorScheme="brand" variant="ghost">
+                <Link to="Contact me" spy={true} smooth={true} duration={1000}>
+
+                  Contact me
+                  </Link>
+                </Button>
               </VStack>
             </Box>
           </HStack>

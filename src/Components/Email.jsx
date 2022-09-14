@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "./Navbar.css"
+import "./Navbar.css";
 import {
   Box,
   Button,
@@ -9,6 +9,7 @@ import {
   HStack,
   Image,
   Input,
+  SimpleGrid,
   Text,
   Textarea,
   VStack,
@@ -51,9 +52,73 @@ export default function Email() {
   };
 
   return (
-    <Box id="Contact me" style={{ fontFamily: "sans-serif" }} color={"white"} bg={"black"}>
-      <Flex pt={"50px"}>
-        <Container  >
+    <Box
+      id="Contact me"
+      pb={"50px"}
+      style={{ fontFamily: "sans-serif" }}
+      color={"white"}
+      bg={"black"}
+    >
+      
+      <SimpleGrid pt={"50px"} gap={"60px"} columns={[1,null,2]}>
+      <Container>
+          <VStack gap={35}>
+            <Heading
+              style={{ fontFamily: "sans-serif" }}
+              as="h2"
+              size={["lg", "xl", "2xl", "3xl"]}
+            >
+              Let's connect
+            </Heading>
+
+            <Box h={"10px"} className="hover">
+              <HStack>
+                <spam>
+                  <HiMail size={30} />
+                </spam>
+                <Text fontSize={["md", "lg", "xl", "2xl"]}>
+                  lalammadhusainadh150@gmail.com
+                </Text>
+              </HStack>
+            </Box>
+            <Box h={"10px"} className="hover">
+              <HStack>
+                <spam>
+                  <CgPhone size={30} />
+                </spam>
+                <Text fontSize={["md", "lg", "xl", "2xl"]}>+91 6303469572</Text>
+              </HStack>
+            </Box>
+            <Box h={"10px"} className="hover">
+              <HStack>
+                <spam>
+                  <AiOutlineLinkedin size={30} />
+                </spam>
+                <Text fontSize={["md", "lg", "xl", "2xl"]}>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/madhusainadh-lalam-aba64b204/"
+                  >
+                    https://www.linkedin.com/in/madhusainadh
+                  </a>
+                </Text>
+              </HStack>
+            </Box>
+            <Box h={"10px"} className="hover">
+              <HStack>
+                <spam>
+                  <BsGithub size={30} />
+                </spam>
+                <Text fontSize={["lg", "xl", "2xl"]}>
+                  <a href="https://github.com/Madhusainadh" target="_blank">
+                    https://github.com/Madhusainadh
+                  </a>
+                </Text>
+              </HStack>
+            </Box>
+          </VStack>
+        </Container>
+        <Container>
           <form ref={form} onSubmit={sendEmail}>
             <FormControl>
               <FormLabel fontSize={"20px"}>Enter your name</FormLabel>
@@ -85,59 +150,9 @@ export default function Email() {
             </FormControl>
           </form>
         </Container>
-        <Container  >
-          <VStack gap={35}>
-            <Heading
-              style={{ fontFamily: "sans-serif" }}
-              as="h2"
-              size={["lg", "xl", "2xl", "3xl"]}
-            >
-              Let's connect
-            </Heading>
-
-            <Box h={"10px"} className="hover">
-              <HStack>
-                <spam>
-                  <HiMail size={30} />
-                </spam>
-                <Text  fontSize={['md',"lg", "xl", "2xl"]}>
-                  lalammadhusainadh150@gmail.com
-                </Text>
-              </HStack>
-            </Box>
-            <Box h={"10px"} className="hover">
-              <HStack>
-                <spam>
-                  <CgPhone size={30} />
-                </spam>
-                <Text fontSize={['md',"lg", "xl", "2xl"]}>
-                  +91 6303469572
-                </Text>
-              </HStack>
-            </Box>
-            <Box h={"10px"} className="hover">
-              <HStack>
-                <spam>
-                  <AiOutlineLinkedin size={30} />
-                </spam>
-                <Text fontSize={['md',"lg", "xl", "2xl"]}>
-               <a href="https://www.linkedin.com/in/madhusainadh-lalam-aba64b204/">https://www.linkedin.com/in/madhusainadh</a> 
-                </Text>
-              </HStack>
-            </Box>
-            <Box h={"10px"} className="hover">
-            <HStack>
-              <spam>
-                <BsGithub size={30} />
-              </spam>
-              <Text fontSize={["lg", "xl", "2xl"]}>
-             <a href="https://github.com/Madhusainadh">https://github.com/Madhusainadh</a> 
-              </Text>
-            </HStack>
-          </Box>
-          </VStack>
-        </Container>
-      </Flex>
+        
+        </SimpleGrid>
+    
     </Box>
   );
 }

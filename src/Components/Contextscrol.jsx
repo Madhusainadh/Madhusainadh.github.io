@@ -2,21 +2,21 @@ import React, {  createContext, useRef } from 'react'
 
 export  const ContextScroll = createContext()
 
-export default function Contextscrolprovider({Children}) {
+export default function Contextscrolprovider({children}) {
 
-const SkillSection = useRef(null)
+// const SkillSection = useRef(null)
 
-const toSkills=()=>{
-    window.scrollTo({
-        top:SkillSection.current.offsetTop,
-        behavior:"smooth"
-    })
-}
-console.log(SkillSection)
+// const toSkills=()=>{
+//     window.scrollTo({
+//         top:SkillSection.current.offsetTop,
+//         behavior:"smooth"
+//     })
+// }
+// console.log(SkillSection)
   return (
     <div>
-      <ContextScroll.Provider value={{SkillSection,toSkills}}>
-      {Children}
+      <ContextScroll.Provider value={{"madhu":"sai"}} >
+      {children}
       </ContextScroll.Provider>
     </div>
   )

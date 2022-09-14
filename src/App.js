@@ -20,7 +20,7 @@ const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
 }, []);
   return (
-    <div className="App" bg={'black'}  style={{fontFamily:"sans-serif"}} >
+    <div className="App" bg={'black'}   style={{fontFamily:"sans-serif"}} >
     <Particles
             id="tsparticles"
             init={particlesInit}
