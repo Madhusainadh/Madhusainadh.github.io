@@ -15,7 +15,7 @@ import {
   Text,
   Heading,
 } from "@chakra-ui/react";
-import madhu from "../madhu.pdf";
+import madhu from "../Madhusainadh_Resume_1.pdf";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Logo } from "@choc-ui/logo";
 import { ContextScroll } from "./Contextscrol";

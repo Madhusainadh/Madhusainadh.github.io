@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Home from './Components/Home';
 import Email from './Components/Email';
+import { Productcard } from './Components/procectCard';
+import { Projects } from './Components/Projects';
 function App() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -83,7 +85,7 @@ const particlesLoaded = useCallback(async (container) => {
                             enable: false,
                             area: 0,
                         },
-                        value: 80,
+                        value: 50,
                     },
                     opacity: {
                         value: 0.5,
