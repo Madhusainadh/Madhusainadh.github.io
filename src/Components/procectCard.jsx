@@ -21,16 +21,16 @@ export const Productcard = ({e}) => {
         shadow={{ lg: "lg" }}
         rounded={{ lg: "lg" }}
       >
-        <Box w={{ lg: "50%" }}>
+        <Flex justifyContent={"center"} w={{ lg: "50%" }} >
           <Box
             h={{ base: 64, lg: "full" }}
             rounded={{ lg: "lg" }}
             bgSize="cover"
-      
+          
           >
           <Image bgSize="cover" h={{ base: 64, lg: "full" }}  rounded={{ lg: "lg" }} src={e.Image?e.Image:'https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80'} />
           </Box>
-        </Box>
+        </Flex>
 
         <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
           <chakra.h2

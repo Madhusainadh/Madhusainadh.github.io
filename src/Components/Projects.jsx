@@ -1,5 +1,7 @@
+import { Box, Container, Heading } from '@chakra-ui/react'
 import React from 'react'
 import { Productcard } from './procectCard'
+import "./Navbar.css"
 
 export const Projects = () => {
 
@@ -26,7 +28,18 @@ export const Projects = () => {
 
   return (
 
-    <div id="Projects">
+    <Box bg={"black"} color="white" id="Projects">
+    <Box><Heading
+
+    style={{ fontFamily: "sans-serif" }}
+    as="h2"
+    size={[ "xl", "2xl", "3xl"]}
+    p={'30px'}
+    className="glow"
+    contentEditable="true"
+  >
+    Projects
+  </Heading></Box>
     {
         content.map((e)=>
         <div>
@@ -34,6 +47,6 @@ export const Projects = () => {
         </div>
         )
     }
-    </div>
+    </Box>
   )
 }

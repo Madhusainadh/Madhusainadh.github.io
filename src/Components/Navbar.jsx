@@ -157,21 +157,23 @@ export default function Navbar() {
                   </Link>
                 </Button>
                 <Button w="full" colorScheme="brand" variant="ghost">
-                <Link to="Projects" spy={true} smooth={true} duration={1000}>
-
-                  Projects
+                  <Link to="Projects" spy={true} smooth={true} duration={1000}>
+                    Projects
                   </Link>
                 </Button>
                 <Button w="full" colorScheme="brand" variant="ghost">
-                <Link to="About" spy={true} smooth={true} duration={1000}>
-
-                  About
+                  <Link to="About" spy={true} smooth={true} duration={1000}>
+                    About
                   </Link>
                 </Button>
                 <Button w="full" colorScheme="brand" variant="ghost">
-                <Link to="Contact me" spy={true} smooth={true} duration={1000}>
-
-                  Contact me
+                  <Link
+                    to="Contact me"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    Contact me
                   </Link>
                 </Button>
               </VStack>
