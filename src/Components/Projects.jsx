@@ -28,7 +28,7 @@ export const Projects = () => {
 
   return (
 
-    <Box bg={"black"} color="white" id="Projects">
+    <Box pt={"50px"}  bg={"black"} color="white" id="Projects">
     <Box><Heading
 
     style={{ fontFamily: "sans-serif" }}

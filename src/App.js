@@ -9,6 +9,7 @@ import Home from './Components/Home';
 import Email from './Components/Email';
 import { Productcard } from './Components/procectCard';
 import { Projects } from './Components/Projects';
+import GitHubcal from './Components/GitHubcal';
 function App() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -101,7 +102,7 @@ const particlesLoaded = useCallback(async (container) => {
             }}
         />
         
-      
+      <GitHubcal/>
 <Home/>
 
         
