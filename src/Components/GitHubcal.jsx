@@ -14,49 +14,63 @@
 
 // export default GitHubcal
 // import React from 'react'
-import { Image } from '@chakra-ui/react';
+import { Box, Heading, Image } from '@chakra-ui/react';
 import React from 'react';
 // import {ScriptTag} from "react-script-tag"
+// import GitHubCalendar from "github-calendar"
+import Typewriter from "typewriter-effect";
+import GitHubCalendar from "react-github-calendar"
 
 const GitHubcal = () => {
   
+  const colourTheme = {
+    background: "transparent",
+    text: "#ffffff",
+    grade4: "#8400b8",
+    grade3: "#b22ff4",
+    grade2: "#b265f6",
+    grade1: "#c084f5",
+    grade0: "#ecd9fc"
+  };
   return (
-    <div>
-   
-      </div>
+    <Box  color={"white"}   bg={"black"}  >
+     <Heading     bg={"black"} style={{ fontFamily: "sans-serif" }}
+    as={"h2"}
+     size={[ "xl", "2xl", "xl"]}
+    contentEditable="true"
+    color={"white"}
+    >
+
+  <Typewriter
+
+  onInit={(typewriter)=> {
+
+  typewriter
+  .start()
+  .typeString("GITHUB ACTIVITY")
+  .pauseFor(2000)
+  .deleteAll()
+  .typeString("GITHUB ACTIVITY")
+  .start()
+  }}
+  />
+
+   </Heading>
+    <Box display={"flex"} justifyContent={"center"} mt={"30px"} mb={"105px"}>
+      <GitHubCalendar
+        username="Madhusainadh"
+        blockSize={15}
+        blockMargin={5}
+        responsive="true"
+        fontSize={16}
+      />
+    </Box>
+      </Box>
   )
-//   class App extends Component {
-//   render() {
-//     return (
-//       <div>
-//         hello world
-//         <ReactGithubCalendar name="axetroy" />
-//       </div>
-//     );
-//   }
-// }
-}
+  }
 
-export default GitHubcal
-// <!-- Include the library. -->
-// <script
-//   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-// ></script>
-
-// <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-// <link
-//    rel="stylesheet"
-//    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-// />
-
-// <!-- Prepare a container for your calendar. -->
-// <div class="calendar">
-//     <!-- Loading stuff -->
-//     Loading the data just for you.
-// </div>
-
-// <script>
-//     GitHubCalendar(".calendar", "your-username");
-//     // or enable responsive functionality
-//     GitHubCalendar(".calendar", "your-username", { responsive: true });
-// </script>
+  export default GitHubcal
+ 
+  
+    
+ 
