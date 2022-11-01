@@ -1,20 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4725da1.css",
-    "main.js": "/static/js/main.ec23eea1.js",
-    "static/js/787.bbab4dab.chunk.js": "/static/js/787.bbab4dab.chunk.js",
-    "static/media/gifmadhu.gif": "/static/media/gifmadhu.2123436eece0c9d217d6.gif",
-    "static/media/HelloBonsai.png": "/static/media/HelloBonsai.860e30e47fc1b34b97fa.png",
-    "static/media/Madhusainadh_Lalam.pdf": "/static/media/Madhusainadh_Lalam.1d2717bd4608bb1cabda.pdf",
-    "static/media/pngback.png": "/static/media/pngback.bf5a1d2cd361e8b9e7ad.png",
-    "static/media/logo.jpg": "/static/media/logo.b1c652514ac4b989f2a3.jpg",
-    "index.html": "/index.html",
-    "main.d4725da1.css.map": "/static/css/main.d4725da1.css.map",
-    "main.ec23eea1.js.map": "/static/js/main.ec23eea1.js.map",
-    "787.bbab4dab.chunk.js.map": "/static/js/787.bbab4dab.chunk.js.map"
+    "main.css": "/Madhusainadh.github.io/static/css/main.d4725da1.css",
+    "main.js": "/Madhusainadh.github.io/static/js/main.d1e3f6b4.js",
+    "static/js/787.bbab4dab.chunk.js": "/Madhusainadh.github.io/static/js/787.bbab4dab.chunk.js",
+    "static/media/chat.png": "/Madhusainadh.github.io/static/media/chat.3a295672d85fff85bb69.png",
+    "static/media/chat1.png": "/Madhusainadh.github.io/static/media/chat1.25ffb8f99229bd10c412.png",
+    "static/media/Unsplash.png": "/Madhusainadh.github.io/static/media/Unsplash.4f3c42e3684e784af22b.png",
+    "static/media/MYNTRA.png": "/Madhusainadh.github.io/static/media/MYNTRA.04a7fce08c5b05679b68.png",
+    "static/media/Unsplash2.png": "/Madhusainadh.github.io/static/media/Unsplash2.4c0ec457f0fd52f22f9d.png",
+    "static/media/Unsplash1.png": "/Madhusainadh.github.io/static/media/Unsplash1.a83ebc895b78d2857698.png",
+    "static/media/Unsplash3.png": "/Madhusainadh.github.io/static/media/Unsplash3.e00fefd64c97d224e2af.png",
+    "static/media/gifmadhu.gif": "/Madhusainadh.github.io/static/media/gifmadhu.2123436eece0c9d217d6.gif",
+    "static/media/MYNTRA1.png": "/Madhusainadh.github.io/static/media/MYNTRA1.6ac681da5c71946f7eed.png",
+    "static/media/chat4.png": "/Madhusainadh.github.io/static/media/chat4.e58c6d3020ddb764b069.png",
+    "static/media/HelloBonsai.png": "/Madhusainadh.github.io/static/media/HelloBonsai.860e30e47fc1b34b97fa.png",
+    "static/media/Madhusainadh_Lalam.pdf": "/Madhusainadh.github.io/static/media/Madhusainadh_Lalam.1d2717bd4608bb1cabda.pdf",
+    "static/media/pngback.png": "/Madhusainadh.github.io/static/media/pngback.bf5a1d2cd361e8b9e7ad.png",
+    "static/media/HelloBonsai3.png": "/Madhusainadh.github.io/static/media/HelloBonsai3.e7a9af5955e9a1a293c4.png",
+    "static/media/chat5.png": "/Madhusainadh.github.io/static/media/chat5.bb254b4b85caaf631c80.png",
+    "static/media/chat2.png": "/Madhusainadh.github.io/static/media/chat2.24a9a00ceeda7e735857.png",
+    "static/media/Unsplash4.png": "/Madhusainadh.github.io/static/media/Unsplash4.7cb7b4992dd53ee71d1e.png",
+    "static/media/chat3.png": "/Madhusainadh.github.io/static/media/chat3.8c0ea7e22e28e3a12650.png",
+    "static/media/HelloBonsai1.png": "/Madhusainadh.github.io/static/media/HelloBonsai1.57453dc92e6110ec003e.png",
+    "static/media/HelloBonsai2.png": "/Madhusainadh.github.io/static/media/HelloBonsai2.810fbe81f17dec7aced5.png",
+    "static/media/HelloBonsai4.png": "/Madhusainadh.github.io/static/media/HelloBonsai4.d32787f64ce880740d74.png",
+    "static/media/logo.jpg": "/Madhusainadh.github.io/static/media/logo.b1c652514ac4b989f2a3.jpg",
+    "index.html": "/Madhusainadh.github.io/index.html",
+    "main.d4725da1.css.map": "/Madhusainadh.github.io/static/css/main.d4725da1.css.map",
+    "main.d1e3f6b4.js.map": "/Madhusainadh.github.io/static/js/main.d1e3f6b4.js.map",
+    "787.bbab4dab.chunk.js.map": "/Madhusainadh.github.io/static/js/787.bbab4dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4725da1.css",
-    "static/js/main.ec23eea1.js"
+    "static/js/main.d1e3f6b4.js"
   ]
 }
