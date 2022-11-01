@@ -18,7 +18,8 @@ import chat2 from "./chat2.png"
 import chat3 from "./chat3.png"
 import chat4 from "./chat4.png"
 import chat5 from "./chat5.png"
-
+import MYNTRA from "./MYNTRA.png"
+import MYNTRA1 from "./MYNTRA1.png"
 import { motion } from "framer-motion";
 export const Projects = () => {
   // https://github.com/Priyanshu-Tyagi/Myntra_Clone
@@ -66,11 +67,9 @@ export const Projects = () => {
       Github: "https://github.com/Priyanshu-Tyagi/Myntra_Clone",
       Live: "https://scintillating-jelly-fdc7ef.netlify.app/",
       slides: [
-        hellobonsai,
-        hellobonsai1,
-        hellobonsai2,
-        hellobonsai3,
-        hellobonsai4,
+        MYNTRA,
+        MYNTRA1,
+      
       ],
     },
   
