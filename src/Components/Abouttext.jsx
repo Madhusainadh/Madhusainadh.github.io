@@ -14,26 +14,29 @@ import back from "./pngback.png";
 import { Link } from "react-scroll";
 
 export default function Abouttext() {
+
+
+  
+
+
+
+
   return (
-    <Box className="body" pt={"100px"} id="About">
+    <Box className="body" color={"white"} pt={"100px"} id="About">
     <SimpleGrid pt={"50px"} gap={"60px"} columns={[1,null,2]}>
 
       <Container className="container">
-        <Img
-          h={['md',"lg", "xl", "2xl"]}
-          src={back}
-          alt="backgroundimg"
-          style={{ position: "absolute" }}
-        ></Img>
-        <Box p={"20px"} className="box" style={{ position: "relative" }}>
-          <Box className="content">
-            <Heading Size={['md',"lg", "xl", "2xl"]}>
+  
+        <Box p={"20px"} className="box"        >
+          <Box className="content" backgroundImage='url(https://picsum.photos/id/1080/200/300) center/cover no-repeat' >
+            <Heading fontStyle="italic" Size={['md',"lg", "xl", "2xl"]}>
               I'm&nbsp;Madhusainadh&nbsp;lalam
             </Heading>
-            <Text mt={"50px"} fontSize={['md',"lg", "xl", "2xl"]}>
-              Quick learner and an aspiring full-stack web developer with core
-              knowledge of MERN stack technology. Looking forward to applying
-              and enhancing my skills and knowledge as a developer.
+            <Text mt={"50px"} fontStyle="italic" fontSize={['md',"lg", "xl", "2xl"]}>
+            Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack technology.
+            Passionate about implementing and launching new projects. Ability to translate business requirements into
+            technical solutions. Looking to start my career as an entry-level software engineer with a firm driven by
+            technology.
             </Text>
           </Box>
         </Box>

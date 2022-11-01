@@ -26,12 +26,13 @@
    /* background-color: red; */
    /* display: flex; */
    /* justify-content: center; */
-
-    
+   /* height:{{'md',"lg", "xl", "2xl"}} */
 }
 
-/* .content{
-    width: "auto";
+/* .content{ */
+    /* width: "auto";
+    background-image: url('./pngback.png')
+
 } */
 
 

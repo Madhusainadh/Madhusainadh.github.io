@@ -1,8 +1,36 @@
-import React from "react";
-import { Box, Flex, Link, chakra, Image } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { Box, Flex, Link, chakra, Image, Text } from "@chakra-ui/react";
+
 import { motion } from "framer-motion";
 export const Productcard = ({ e }) => {
-  console.log({ ...e });
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slidesCount = e.slides.length;
+
+  const carouselStyle = {
+    transition: "all .5s",
+    ml: `-${currentSlide * 100}%`,
+  };
+
+  const SLIDES_INTERVAL_TIME = 3000;
+  const ANIMATION_DIRECTION = "right";
+
+  useEffect(() => {
+    const prevSlide = () => {
+      setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
+    };
+
+    const nextSlide = () => {
+      setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
+    };
+
+    const automatedSlide = setInterval(() => {
+      ANIMATION_DIRECTION.toLowerCase() === "left" ? prevSlide() : nextSlide();
+    }, SLIDES_INTERVAL_TIME);
+    return () => clearInterval(automatedSlide);
+  }, [slidesCount]);
+
+  // console.log({ ...e });
   return (
     <Flex
       bg="Black"
@@ -27,68 +55,98 @@ export const Productcard = ({ e }) => {
             rounded={{ lg: "lg" }}
             bgSize="cover"
           >
-            <Image
-              bgSize="cover"
-              h={{ base: 64, lg: "full" }}
-              rounded={{ lg: "lg" }}
-              src={
-                e.Image
-                  ? e.Image
-                  : "https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
-              }
-            />
+            <Flex
+              w="full"
+              _dark={{ bg: "#3e3e3e" }}
+              p={10}
+              justifyContent="center"
+            >
+              <Box overflow="hidden" >
+                <Flex w="full" {...carouselStyle}>
+                  {e.slides.map((slide, sid) => (
+                    <Box
+                      key={`slide-${sid}`}
+                      flex="none"
+                      boxSize="full"
+                      shadow="md"
+                      display={"flex"}
+                      justifyContent="center"
+                    >
+                      <Image
+                        src={slide}
+                        alt="carousel image"
+                        // boxSize="full"
+                        bgSize="cover"
+                        h="64"
+                        w={{ base: "xl" }}
+                        rounded={"lg"}
+                      />
+                    </Box>
+                  ))}
+                </Flex>
+              </Box>
+            </Flex>
           </Box>
         </Flex>
 
-        <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
-          <chakra.h2
-            fontSize={{ base: "2xl", md: "3xl" }}
-            color="White"
-            _dark={{ color: "white" }}
-            fontWeight="bold"
-          >
-            {e.ProjectName}
-            <chakra.span
-              color="brand.600"
-              _dark={{ color: "brand.400" }}
-            ></chakra.span>
-          </chakra.h2>
-          <chakra.p mt={4} color="white" _dark={{ color: "white" }}>
-            {e.Discprition}
-          </chakra.p>
-          <Flex justifyContent={"space-around"}>
-            <Box mt={8}>
-              <Link
-                bg="gray.900"
-                color="white"
-                px={5}
-                py={3}
-                fontWeight="semibold"
-                rounded="lg"
-                _hover={{ bg: "gray.800" }}
-                href={e.Github}
-                isExternal
-              >
-                Project code
-              </Link>
-            </Box>
+        <Box
+          display={"flex"}
+          justifyContent="center"
+          py={12}
+          px={6}
+          // maxW={{ base: "xl", lg: "5xl" }}
+          w={{ lg: "50%" }}
+        >
+          <Box>
+            <chakra.h2
+              fontSize={{ base: "2xl", md: "3xl" }}
+              color="White"
+              _dark={{ color: "white" }}
+              fontWeight="bold"
+            >
+              {e.ProjectName}
+              <chakra.span
+                color="brand.600"
+                _dark={{ color: "brand.400" }}
+              ></chakra.span>
+            </chakra.h2>
+            <chakra.p mt={4} color="white" _dark={{ color: "white" }}>
+              {e.Discprition}
+            </chakra.p>
+            <Flex justifyContent={"space-around"}>
+              <Box mt={8}>
+                <Link
+                  bg="gray.900"
+                  color="white"
+                  px={5}
+                  py={3}
+                  fontWeight="semibold"
+                  rounded="lg"
+                  _hover={{ bg: "gray.800" }}
+                  href={e.Github}
+                  isExternal
+                >
+                  Project code
+                </Link>
+              </Box>
 
-            <Box mt={8}>
-              <Link
-                bg="gray.900"
-                color="gray.100"
-                px={5}
-                py={3}
-                fontWeight="semibold"
-                rounded="lg"
-                _hover={{ bg: "gray.800" }}
-                href={e.Live}
-                isExternal
-              >
-                Live code
-              </Link>
-            </Box>
-          </Flex>
+              <Box mt={8}>
+                <Link
+                  bg="gray.900"
+                  color="gray.100"
+                  px={5}
+                  py={3}
+                  fontWeight="semibold"
+                  rounded="lg"
+                  _hover={{ bg: "gray.800" }}
+                  href={e.Live}
+                  isExternal
+                >
+                  Live code
+                </Link>
+              </Box>
+            </Flex>
+          </Box>
         </Box>
       </Box>
     </Flex>
