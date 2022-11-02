@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Flex, Link, chakra, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, chakra, Image, Text, SimpleGrid } from "@chakra-ui/react";
 
 import { motion } from "framer-motion";
 export const Productcard = ({ e }) => {
@@ -113,7 +113,7 @@ export const Productcard = ({ e }) => {
             <chakra.p mt={4} color="white" _dark={{ color: "white" }}>
               {e.Discprition}
             </chakra.p>
-            <Flex justifyContent={"space-around"}>
+            <SimpleGrid  columns={[1,2,2,2]}  justifyContent={"space-around"}>
               <Box mt={8}>
                 <Link
                   bg="gray.900"
@@ -145,7 +145,7 @@ export const Productcard = ({ e }) => {
                   Live code
                 </Link>
               </Box>
-            </Flex>
+            </SimpleGrid>
           </Box>
         </Box>
       </Box>
