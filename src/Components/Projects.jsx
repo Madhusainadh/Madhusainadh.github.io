@@ -28,8 +28,8 @@ export const Projects = () => {
       id: 1,
       ProjectName: "HelloBonsai_Clone",
       Discprition:
-        "On this project total of 5 people worked as a team and were able to complete 70% of this project in 5 days. we used MongoDB, Express, React, Node.js, redux, and chakra_ui. My role in this project is to complete the Dashboard page which includes NavBar, Clint_page,Project_page, Tasks_page,and Timetraking_page.",
-      Github: "https://github.com/AnkitParte/astute-line-8992",
+      "Hello, Bonsai is a freelancing management app. that offers freelance proposals and contracts. It handles your freelance invoices and payments. Acollaborative project built by a team of 5 executed in 4 days. Stacks that have used to build Hellobonsai websit are React, Redux, Express, MongoDB, Nodejs. "  ,
+          Github: "https://github.com/AnkitParte/astute-line-8992",
       Live: "https://astute-line-by-madhu-and-team.vercel.app/",
       slides: [
         hellobonsai,
@@ -43,17 +43,18 @@ export const Projects = () => {
       id: 2,
       ProjectName: "Upsplash_Clone",
       Discprition:
-        "On this project total of 5 people worked as a team and completed this website" +
-        "in 4 days. We used HTML CSS javascript and JSON for the backend to complete this project. we used API to" +
-        "fetch the data into the pages. My role in this Project is to complete Blog_page and every single page inside that page.",
-      Github: "https://github.com/amitchouhan948/Unsplash-Project_U3",
+      "Upsplash provide Free stock photos & videos you can use"+
+      "everywhere. Browse millions of high-quality stock"+
+      "images. A collaborative project built by a team of"+
+     " 4 executed in 4 days.  Stacks that have used to build Upsplash websit are HTML , CSS , JS , JSON . ",
+         Github: "https://github.com/amitchouhan948/Unsplash-Project_U3",
       Live: "https://tiny-chaja-dd6545.netlify.app/index.html",
       slides: [Unsplash, Unsplash1, Unsplash2, Unsplash3, Unsplash4],
     },
     {
       id: 3,
-      ProjectName: "Chat app",
-      Discprition: "Solo project made with socket.io using MERN stack",
+      ProjectName: "goExplore",
+      Discprition: "goExplore is a chating webiste which can be use to communicat to each other through messages. Stacks that have used to build goExplore are Socket.io and MongoDb, Express, React, Node.js .",
       Github: "https://github.com/Madhusainadh/socialmedia",
       Live: "",
       slides: [chat,chat1,chat2,chat3,chat4,chat5],

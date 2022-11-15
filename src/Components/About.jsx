@@ -6,8 +6,8 @@ export default function About() {
   return (
     <Box   bg={'black'} pt={"100px"} id="me"  >
       <Flex  bg={'black'} color={"white"}>
-      <Container   ><Image borderRadius={'50%'} src={pick }  alt="madhusainadh"></Image></Container>
-      <Container  ><img src={logo}></img></Container>
+      <Container   ><Image   borderRadius={'50%'} src={pick }  alt="madhusainadh"></Image></Container>
+      <Container ><img src={logo} alt="" ></img></Container>
       </Flex>
     </Box>
   )
