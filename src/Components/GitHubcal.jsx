@@ -33,7 +33,7 @@ const GitHubcal = () => {
     grade0: "#ecd9fc"
   };
   return (
-    <Box  color={"white"} p={"50px"}   bg={"black"}  >
+    <Box  color={"white"} p={"50px"}  bg={"black"}  >
      <Heading     bg={"black"} style={{ fontFamily: "sans-serif" }}
     as={"h2"}
      size={[ "xl", "2xl", "xl"]}

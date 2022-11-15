@@ -7,6 +7,7 @@ import GitHubcal from './GitHubcal'
 import Navbar from './Navbar'
 import { Projects } from './Projects'
 import Skills from './Skills'
+import { Stats } from './Stats'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <Abouttext/>
     <Skills/>
     <GitHubcal/>
+    <Stats/>
     <Projects/>
     <Email/>
     
