@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Box, Flex, Link, chakra, Image, Text, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Link,
+  chakra,
+  Image,
+  Text,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
 import { motion } from "framer-motion";
 export const Productcard = ({ e }) => {
@@ -61,7 +69,7 @@ export const Productcard = ({ e }) => {
               p={10}
               justifyContent="center"
             >
-              <Box overflow="hidden" >
+              <Box overflow="hidden">
                 <Flex w="full" {...carouselStyle}>
                   {e.slides.map((slide, sid) => (
                     <Box
@@ -113,7 +121,27 @@ export const Productcard = ({ e }) => {
             <chakra.p mt={4} color="white" _dark={{ color: "white" }}>
               {e.Discprition}
             </chakra.p>
-            <SimpleGrid  columns={[1,2,2,2]}  justifyContent={"space-around"}>
+            <Box
+            textAlign={"start"}
+            >
+            <chakra.span
+            textAlign={"start"}
+            color="white"
+            fontSize={"bold"}
+            _dark={{ color: "white.400" }}
+            p={"20px"}
+          >  <chakra.span fontSize={{ base: "20px", md: "30px" }} color={"#216e39"} pr={"5px"} >Stacks</chakra.span>that have used to build <chakra.span color={"#30a14e"}>{e.ProjectName}</chakra.span> </chakra.span>
+          </Box> 
+          <SimpleGrid gap={"10px"} columns={[3,3,3]} >
+            {e.Stacks? e.Stacks.map((e)=><Box  
+               bg="bule.900"
+            color="gray.100"
+            fontWeight="semibold"
+            rounded="lg"
+            border
+            isExternal >{e}</Box>):""}
+            </SimpleGrid>
+            <SimpleGrid columns={[1, 2, 2, 2]} justifyContent={"space-around"}>
               <Box mt={8}>
                 <Link
                   bg="gray.900"
