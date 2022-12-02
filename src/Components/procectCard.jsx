@@ -121,25 +121,41 @@ export const Productcard = ({ e }) => {
             <chakra.p mt={4} color="white" _dark={{ color: "white" }}>
               {e.Discprition}
             </chakra.p>
-            <Box
-            textAlign={"start"}
-            >
-            <chakra.span
-            textAlign={"start"}
-            color="white"
-            fontSize={"bold"}
-            _dark={{ color: "white.400" }}
-            p={"20px"}
-          >  <chakra.span fontSize={{ base: "20px", md: "30px" }} color={"#216e39"} pr={"5px"} >Stacks</chakra.span>that have used to build <chakra.span color={"#30a14e"}>{e.ProjectName}</chakra.span> </chakra.span>
-          </Box> 
-          <SimpleGrid gap={"10px"} columns={[3,3,3]} >
-            {e.Stacks? e.Stacks.map((e)=><Box  
-               bg="bule.900"
-            color="gray.100"
-            fontWeight="semibold"
-            rounded="lg"
-            border
-            isExternal >{e}</Box>):""}
+            <Box textAlign={"start"}>
+              <chakra.span
+                textAlign={"start"}
+                color="white"
+                fontSize={"bold"}
+                _dark={{ color: "white.400" }}
+                p={"20px"}
+              >
+                {" "}
+                <chakra.span
+                  fontSize={{ base: "20px", md: "30px" }}
+                  color={"#216e39"}
+                  pr={"5px"}
+                >
+                  Stacks
+                </chakra.span>
+                that have used to build{" "}
+                <chakra.span color={"#30a14e"}>{e.ProjectName}</chakra.span>{" "}
+              </chakra.span>
+            </Box>
+            <SimpleGrid gap={"10px"} columns={[3, 3, 3]}>
+              {e.Stacks
+                ? e.Stacks.map((e) => (
+                    <Box
+                      bg="bule.900"
+                      color="gray.100"
+                      fontWeight="semibold"
+                      rounded="lg"
+                      border
+                      isExternal
+                    >
+                      {e}
+                    </Box>
+                  ))
+                : ""}
             </SimpleGrid>
             <SimpleGrid columns={[1, 2, 2, 2]} justifyContent={"space-around"}>
               <Box mt={8}>
@@ -157,22 +173,22 @@ export const Productcard = ({ e }) => {
                   Project code
                 </Link>
               </Box>
-
-              <Box mt={8}>
-                <Link
-                  bg="gray.900"
-                  color="gray.100"
-                  px={5}
-                  py={3}
-                  fontWeight="semibold"
-                  rounded="lg"
-                  _hover={{ bg: "gray.800" }}
-                  href={e.Live}
-                  isExternal
-                >
-                  Live code
-                </Link>
-              </Box>
+           {(e.Live!==0)?<Box mt={8}>
+           <Link
+             bg="gray.900"
+             color="gray.100"
+             px={5}
+             py={3}
+             fontWeight="semibold"
+             rounded="lg"
+             _hover={{ bg: "gray.800" }}
+             href={e.Live}
+             isExternal
+           >
+             Live code
+           </Link>
+         </Box>:<></>}
+              
             </SimpleGrid>
           </Box>
         </Box>

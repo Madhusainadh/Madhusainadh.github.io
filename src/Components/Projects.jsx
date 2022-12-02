@@ -12,20 +12,24 @@ import Unsplash1 from "./Unsplash1.png";
 import Unsplash2 from "./Unsplash2.png";
 import Unsplash3 from "./Unsplash3.png";
 import Unsplash4 from "./Unsplash4.png";
-import chat from "./chat.png"
-import chat1 from "./chat1.png"
-import chat2 from "./chat2.png"
-import chat3 from "./chat3.png"
-import chat4 from "./chat4.png"
-import chat5 from "./chat5.png"
-import ComicaDigital1 from "./Comica-Digital1.png"
-import ComicaDigital2 from "./Comica-Digital2.png"
-import ComicaDigital3 from "./Comica-Digital3.png"
-import ComicaDigital4 from "./Comica-Digital4.png"
-import ComicaDigital5 from "./Comica-Digital5.png"
+import chat from "./chat.png";
+import chat1 from "./chat1.png";
+import chat2 from "./chat2.png";
+import chat3 from "./chat3.png";
+import chat4 from "./chat4.png";
+import chat5 from "./chat5.png";
+import ComicaDigital1 from "./Comica-Digital1.png";
+import ComicaDigital2 from "./Comica-Digital2.png";
+import ComicaDigital3 from "./Comica-Digital3.png";
+import ComicaDigital4 from "./Comica-Digital4.png";
+import ComicaDigital5 from "./Comica-Digital5.png";
+import tender0 from "./tender0.png";
+import tender from "./tender.png";
+import tender1 from "./tender1.png";
+import tender2 from "./tender2.png";
+import tender3 from "./tender3.png";
+import tender4 from "./tender4.png";
 
-import MYNTRA from "./MYNTRA.png"
-import MYNTRA1 from "./MYNTRA1.png"
 import { motion } from "framer-motion";
 export const Projects = () => {
   // https://github.com/Priyanshu-Tyagi/Myntra_Clone
@@ -34,9 +38,9 @@ export const Projects = () => {
       id: 1,
       ProjectName: "ComicaDigital _Clone",
       Discprition:
-      "Comicadigital offers its customers a delightful shopping experience and helps them in bringing home the latest & best technology at an unbeatable price. A collaborative project built by a team of 4 executed in 4 days.  "  ,
+        "Comicadigital offers its customers a delightful shopping experience and helps them in bringing home the latest & best technology at an unbeatable price. A collaborative project built by a team of 4 executed in 4 days.  ",
       Github: "https://github.com/pg570/ComicaDigital_website",
-      Stacks:[" React", "Redux", "Express"," MongoDB", "Nodejs "],
+      Stacks: [" React", "Redux", "Express", " MongoDB", "Nodejs "],
       Live: "https://comicadigital.netlify.app/",
       slides: [
         ComicaDigital1,
@@ -50,9 +54,9 @@ export const Projects = () => {
       id: 2,
       ProjectName: "HelloBonsai_Clone",
       Discprition:
-      "Hello, Bonsai is a freelancing management app. that offers freelance proposals and contracts. It handles your freelance invoices and payments. Acollaborative project built by a team of 5 executed in 4 days. Stacks that have used to build Hellobonsai websit are React, Redux, Express, MongoDB, Nodejs. "  ,
-          Github: "https://github.com/AnkitParte/astute-line-8992",
-      Stacks:[" React", "Redux", "Express"," MongoDB", "Nodejs "],
+        "Hello, Bonsai is a freelancing management app. that offers freelance proposals and contracts. It handles your freelance invoices and payments. Acollaborative project built by a team of 5 executed in 4 days. Stacks that have used to build Hellobonsai websit are React, Redux, Express, MongoDB, Nodejs. ",
+      Github: "https://github.com/AnkitParte/astute-line-8992",
+      Stacks: [" React", "Redux", "Express", " MongoDB", "Nodejs "],
 
       Live: "https://astute-line-by-madhu-and-team.vercel.app/",
       slides: [
@@ -65,45 +69,47 @@ export const Projects = () => {
     },
     {
       id: 3,
+      ProjectName: "Tendercuts_Clone",
+      Discprition:
+        "Tendercut website is basically a meet ordering site they are delivered by the local shops freshelly. A collaborative project built by a team of 2 ",
+      Github: "https://github.com/Madhusainadh/tendercuts_Clone",
+      Stacks: [
+        " React",
+        "TypeScript",
+        "Redux",
+        "Express",
+        " MongoDB",
+        "Nodejs ",
+      ],
+
+      Live: "https://tendercut-clone-typescript.vercel.app/",
+      slides: [tender0, tender1, tender2, tender3, tender4],
+    },
+    {
+      id: 4,
       ProjectName: "Upsplash_Clone",
       Discprition:
-      "Upsplash provide Free stock photos & videos you can use"+
-      "everywhere. Browse millions of high-quality stock"+
-      "images. A collaborative project built by a team of"+
-     " 4 executed in 4 days. ",
-         Github: "https://github.com/amitchouhan948/Unsplash-Project_U3",
-     Stacks:[" HTML", "CSS", "JS"," JSON", "Nodejs "],
+        "Upsplash provide Free stock photos & videos you can use" +
+        "everywhere. Browse millions of high-quality stock" +
+        "images. A collaborative project built by a team of" +
+        " 4 executed in 4 days. ",
+      Github: "https://github.com/amitchouhan948/Unsplash-Project_U3",
+      Stacks: [" HTML", "CSS", "JS", " JSON", "Nodejs "],
 
       Live: "https://tiny-chaja-dd6545.netlify.app/index.html",
       slides: [Unsplash, Unsplash1, Unsplash2, Unsplash3, Unsplash4],
     },
     {
-      id: 4,
-      ProjectName: "goExplore",
-      Discprition: "goExplore is a chating webiste which can be use to communicat to each other through messages.",
-      Github: "https://github.com/Madhusainadh/socialmedia",
-      Stacks:[ "Socket.io" ," React", "express", "MongoDB"," Node.js"],
-
-      Live: "",
-      slides: [chat,chat1,chat2,chat3,chat4,chat5],
-    },
-
-    {
       id: 5,
-      ProjectName: "Myntra_Clone",
+      ProjectName: "goExplore",
       Discprition:
-        "On this project, 6 people worked as a team, and we took the help of local storage to store the data in the backend. My role in this project is to Build home page and navbar of the website. ",
-      Github: "https://github.com/Priyanshu-Tyagi/Myntra_Clone",
-      Stacks:[ "HTML" ," CSS", "JS"],
+        "goExplore is a chating webiste which can be use to communicat to each other through messages.",
+      Github: "https://github.com/Madhusainadh/socialmedia",
+      Stacks: ["Socket.io", " React", "express", "MongoDB", " Node.js"],
 
-      Live: "https://scintillating-jelly-fdc7ef.netlify.app/",
-      slides: [
-        MYNTRA,
-        MYNTRA1,
-      
-      ],
+      Live: 0,
+      slides: [chat, chat1, chat2, chat3, chat4, chat5],
     },
-  
   ];
 
   return (
